@@ -1,0 +1,21 @@
+{
+  "name": "feb23-t3w11-mongoose-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node src/index.js",
+    "dev":"nodemon src/index.js",
+    "seed": "node src/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
