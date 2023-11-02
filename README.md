@@ -1,5 +1,39 @@
 # feb23-t3w11-mongoose-intro
 
-Note that we didn't do process.env.DB_URI package/setup stuff in this lesson, but we have to use that so that our DB password isn't exposed.
+## Thursday Goals
 
-Do the process.env setup yourself! ;) 
+- Start a lil cat-tracking backend app project
+- Data design / planning some schemas
+- Basic CRUD for notes in Mongoose and Express
+
+
+- Users 
+	- username
+	- password
+- Cats 
+	- all that cat data from Tuesday 
+	- name, breed, favouritePlaceToSit, etc 
+- Sightings 
+	- date
+	- place
+	- User.id
+	- Cat.id 
+
+
+
+
+
+
+## Extra notes 
+
+npm run seed
+node src/seed.js
+	database.js
+
+npm run start
+npm run dev
+node src/index.js
+	server.js
+		database.js 
+
+
