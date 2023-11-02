@@ -12,6 +12,9 @@ app.get("/", (request, response) => {
 	});
 });
 
+const CatRouter = require('./controllers/CatController');
+app.use('/cats', CatRouter);
+
 module.exports = {
 	app
 }

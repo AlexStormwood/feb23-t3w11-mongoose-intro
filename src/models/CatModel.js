@@ -46,6 +46,11 @@ const CatSchema = new Schema({
 		type: [String],
 		required: false,
 		unique: false
+	},
+	breed: {
+		type: String,
+		required: true,
+		unique: false
 	}
 });
 
