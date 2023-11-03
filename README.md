@@ -1,5 +1,12 @@
 # feb23-t3w11-mongoose-intro
 
+## Saturday Goals
+
+- Implement error handling (basic way) on CRUD operations
+- Creating "Sightings" model and associating them with Users and Cats 
+- Doing CRUD for Sightings documents
+
+
 ## Thursday Goals
 
 - Start a lil cat-tracking backend app project
