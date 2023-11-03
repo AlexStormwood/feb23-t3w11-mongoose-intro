@@ -47,7 +47,18 @@ router.get("/multiple/breed/:breedToFilterBy", async (request, response) => {
 // Create a new cat in the DB
 // POST localhost:3000/cats/
 router.post("/", async (request, response) => {
-	let result = await Cat.create(request.body);
+
+	// Error handling via try-catch
+	// let result = null;
+	// try {
+	// 	result = await Cat.create(request.body);
+	// } catch (error) {
+	// 	result = error;
+	// }
+
+	// Error handling via Promise.catch()
+	let result = await Cat.create(request.body).catch(error => {return error});
+	
 
 	response.json({
 		cat: result
