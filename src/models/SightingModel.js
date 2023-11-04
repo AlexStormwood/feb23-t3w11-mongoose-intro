@@ -26,6 +26,22 @@ const SightingSchema = new Schema({
 	]
 });
 
+// Cool way to do populate on all find____ model methods
+// so our controller code is cleaner and shorter 
+// SightingSchema.post(/find/i, async (docs) => {
+// 	console.log("This hook runs after any find___ model method.");
+// 	console.log(docs);
+
+// 	let result = typeof docs === "array" ? 
+// 	await docs[0].populate('user cats', '-password') 
+// 	: 
+// 	await docs.populate('user cats', '-password');
+
+// 	return result;
+// })
+
+
+
 const Sighting = mongoose.model('Sighting', SightingSchema);
 
 module.exports = {
