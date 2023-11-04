@@ -14,6 +14,9 @@ app.get("/", (request, response) => {
 	});
 });
 
+const { User } = require('./models/UserModel');
+
+
 const CatRouter = require('./controllers/CatController');
 app.use('/cats', CatRouter);
 

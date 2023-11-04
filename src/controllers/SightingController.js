@@ -56,6 +56,9 @@ router.post("/", async (request, response) => {
 
 	// Error handling via Promise.catch()
 	let result = await Sighting.create(request.body).catch(error => {return error});
+	// await user.populate('company').execPopulate()
+	result = await result.populate('cats');
+	result = await result.populate('user', 'username');
 	
 
 	response.json({
